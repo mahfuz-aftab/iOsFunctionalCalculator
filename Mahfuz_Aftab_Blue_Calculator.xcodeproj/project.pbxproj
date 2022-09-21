@@ -13,6 +13,7 @@
 		DE0F288A28D976940018AF54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0F288828D976940018AF54 /* Main.storyboard */; };
 		DE0F288C28D976950018AF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0F288B28D976950018AF54 /* Assets.xcassets */; };
 		DE0F288F28D976950018AF54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0F288D28D976950018AF54 /* LaunchScreen.storyboard */; };
+		DEB8A9C728DA59360090365A /* Mahfuz_Calculator_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8A9C628DA59360090365A /* Mahfuz_Calculator_Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DE0F288B28D976950018AF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE0F288E28D976950018AF54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE0F289028D976950018AF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB8A9C628DA59360090365A /* Mahfuz_Calculator_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mahfuz_Calculator_Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DE0F288B28D976950018AF54 /* Assets.xcassets */,
 				DE0F288D28D976950018AF54 /* LaunchScreen.storyboard */,
 				DE0F289028D976950018AF54 /* Info.plist */,
+				DEB8A9C628DA59360090365A /* Mahfuz_Calculator_Model.swift */,
 			);
 			path = Mahfuz_Aftab_Blue_Calculator;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB8A9C728DA59360090365A /* Mahfuz_Calculator_Model.swift in Sources */,
 				DE0F288728D976940018AF54 /* ViewController.swift in Sources */,
 				DE0F288328D976940018AF54 /* AppDelegate.swift in Sources */,
 				DE0F288528D976940018AF54 /* SceneDelegate.swift in Sources */,
