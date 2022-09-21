@@ -38,20 +38,35 @@ class ViewController: UIViewController {
         
         switch(buttonText) {
             
-        case "0","1","2","3","4","5","6","7","8","9":
+        case "0","1","2","3","4","5","6","7","8","9", ".":
             print("Inside", buttonText)
 //            if (currentValue == "0"){
            if (startNewNumer == true){
-                currentValue = buttonText
+               if(buttonText == "."){
+                   currentValue = "0."
+               }
+               else {
+                   currentValue = buttonText
+               }
             }
+            
+            else if((buttonText == ".") && (currentValue.contains("."))){
+//                Crash Handle
+                }
             else{
                 currentValue = currentValue +  buttonText
             }
+
             startNewNumer = false
             calculatorModel.updateNumber (newNumber: Double(currentValue)!)
             
-//        case "+":
         case "+", "-", "x", "/" :
+            if (calculatorModel.secondNumber != nil ){
+                currentValue = String(calculatorModel.getCalculationResult())
+                calculatorModel.doReset()
+                calculatorModel.updateNumber (newNumber: Double(currentValue)!)
+            }
+            
             calculatorModel.operation = buttonText
             startNewNumer = true
             
@@ -60,6 +75,11 @@ class ViewController: UIViewController {
                 calculatorModel.updateNumber (newNumber: Double(currentValue)!)
             }
             currentValue = String(calculatorModel.getCalculationResult())
+            startNewNumer = true
+            
+        case "C" :
+            currentValue = "0"
+            calculatorModel.doReset()
             startNewNumer = true
             
         default : print(buttonText)

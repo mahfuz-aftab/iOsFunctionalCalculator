@@ -13,13 +13,10 @@ class Mahfuz_Calculator_Model {
     var operation : String?
     
     func updateNumber (newNumber: Double){
-//        if (firstNumber == nil){
         if (firstNumber == nil || operation == nil){
             firstNumber = newNumber
         }
-//        else if (operation == nil){
-//            firstNumber = newNumber
-//        }
+        
         else {
             secondNumber = newNumber
         }
@@ -45,5 +42,11 @@ class Mahfuz_Calculator_Model {
             result = 0.0
         }
         return result
+    }
+    
+    func doReset(){
+        firstNumber = nil
+        secondNumber = nil
+        operation =  nil
     }
 }
